@@ -1,13 +1,9 @@
--- Gui to Lua
--- Version: 3.2
+--Project Lazarus Zombie Counter By LuaScape
 
--- Instances:
 
 local counter = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local uistroke = Instance.new("UIStroke")
-
---Properties:
 
 counter.Name = "counter"
 counter.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -17,25 +13,23 @@ counter.ResetOnSpawn = false
 TextLabel.Parent = counter
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.02, 0,0.686, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(216, 216, 216)
+TextLabel.Position = UDim2.new(0.460000008, 0, 0.901081443, 0)
 TextLabel.Size = UDim2.new(0.0785386488, 0, 0.0733122677, 0)
 TextLabel.Font = Enum.Font.Gotham
 TextLabel.Text = "0"
-TextLabel.TextColor3 = Color3.fromRGB(216,216,216)
+TextLabel.TextColor3 = Color3.fromRGB(225, 225, 225)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
-
 
 uistroke.Parent = TextLabel
 uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 uistroke.Color = Color3.new(0,0,0)
 uistroke.Thickness = 1.1
 
--- Scripts:
 
-local function FIAZFI_fake_script() -- TextLabel.LocalScript 
+local function PQSTOFW_fake_script()
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local uis = game:GetService("UserInputService")
@@ -56,4 +50,4 @@ local function FIAZFI_fake_script() -- TextLabel.LocalScript
 		script.Parent.Text = #game.Workspace.Baddies:GetChildren()
 	end
 end
-coroutine.wrap(FIAZFI_fake_script)()
+coroutine.wrap(PQSTOFW_fake_script)()
